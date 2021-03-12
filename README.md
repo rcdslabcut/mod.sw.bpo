@@ -26,7 +26,7 @@ cd <your_catkin_workspace>/src/mod.sw.bpo/
 docker build -t mod.sw.bpo .
 ```
 
-You can launch the BPO service from:
+Launch the BPO service from:
  * Docker image
 ```
 docker run -it mod.sw.bpo bash
