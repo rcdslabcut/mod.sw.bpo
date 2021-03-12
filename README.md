@@ -33,6 +33,11 @@ docker run -it mod.sw.bpo bash
 ```
 or 
  * Docker-compose
+You need to configure IP addresses and the netinterface regarding your set-up. 
+In the `FIWAREHOST`, you need to put the IP address where the fiware is running. 
+The `HOST` IP of the computer where BPO service is currently running (if you run the BPO service locally, you can keep the `127.0.0.1` IP address). 
+The `NETINTERFACE` of the computer where the BPO is running. 
+Then, you can up the BPO docker image using the `docker-compose_bpo.yaml` file.
 ```
 docker-compose -f docker-compose_bpo.yaml up -d
 ```
