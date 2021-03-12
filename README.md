@@ -13,14 +13,14 @@ catkin_make
 ```
 
 ### Starting from source code
-To start the BPO service, you need to run the following commands on a computer where ROS kinetic is already installed.
+To start the BPO service, run the following commands on a computer where ROS kinetic is already installed.
 
 Open a terminal and launch the bpo_service_v5.launch file by running the following command
 ```
 roslaunch opil_bpo bpo_service_v5.launch 
 ```
 ### Starting from docker container
-To start the BPO service, you need to build the BPO docker container using the `Dockerfile`.
+To start the BPO service, build the BPO docker container using the `Dockerfile`.
 ```
 cd <your_catkin_workspace>/src/mod.sw.bpo/
 docker build -t mod.sw.bpo .
@@ -34,10 +34,10 @@ docker run -it mod.sw.bpo bash
 or 
  * Docker-compose \
 Configure the IP addresses and the netinterface of the `docker-compose_bpo.yaml` file regarding your set-up. \
-In the `FIWAREHOST`, you need to put the IP address where the fiware is running. \ 
-The `HOST` IP of the computer where BPO service is currently running (if you run the BPO service locally, you can keep the `127.0.0.1` IP address). \
+In the `FIWAREHOST`, put the IP address where the fiware is running. \ 
+The `HOST` IP of the computer where BPO service is currently running (if the BPO service is running locally, keep the `127.0.0.1` IP address). \
 The `NETINTERFACE` of the computer where the BPO is running. \
-Then, you can up the BPO docker image using the `docker-compose_bpo.yaml` file.
+Then, run the BPO docker image using the `docker-compose_bpo.yaml` file.
 ```
 docker-compose -f docker-compose_bpo.yaml up -d
 ```
