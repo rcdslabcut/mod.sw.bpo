@@ -27,11 +27,12 @@ docker build -t mod.sw.bpo .
 ```
 
 You can launch the BPO service from:
-  * docker image
+ * Docker image
 ```
 docker run -it mod.sw.bpo bash
 ```
-or you can use the docker-compose to up the container
+or 
+ * Docker-compose
 ```
 docker-compose -f docker-compose_bpo.yaml up -d
 ```
